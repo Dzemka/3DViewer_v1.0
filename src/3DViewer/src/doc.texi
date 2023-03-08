@@ -1,0 +1,115 @@
+\input texinfo
+@setfilename doc.info
+@settitle 3DViewer-v1.0
+
+@ifinfo
+@node Top
+@top 3DViewer_v1.0
+Documentation
+@end ifinfo
+
+@titlepage
+@title 3DViewer-v1.0
+@subtitle Documentation
+@author lpuddy
+@page @c
+@end titlepage
+
+@menu
+* Description::
+* Additional features::
+@end menu
+
+@node Description
+@chapter Description
+The 3DViewer program is capable of rendering 3D objects stored
+in obj format and perform movement, rotation and scaling 
+these objects are relative to three axes.
+To display the model in the program window, follow File->Open->OBJ
+and in the dialog box that appears, select the file in obj format.
+
+@menu
+* Moving the model::
+* Model Rotation::
+* Scaling the model::
+@end menu
+
+@node Moving the model
+@section Moving the model
+To move the model, use the MoveX, MoveY and MoveZ commands, after
+entering the values in the corresponding input fields.
+
+@node Model Rotation
+@section Model Rotation
+To rotate the model, use the rotateX, rotateY and rotateZ commands,
+after entering the values of the rotation angles in degrees in the
+corresponding input fields.
+Another method of rotation is to use the left mouse button to move
+it in the program window.
+
+@node Scaling the model
+@section Scaling the model
+To change the dimensions of the model, use the Scale command, after
+entering the value of the zoom factor in the appropriate input field.
+The coefficient value can be a fractional positive number.
+Another way to scale is using the mouse wheel in the program window.
+
+@node Additional features
+@chapter Additional features
+
+@menu
+* Settings::
+* Images::
+* Gif::
+@end menu
+
+@node Settings
+@section Settings
+The program provides the ability to select the projection of the display
+(central and parallel), the background color of the model, the color and
+thickness of the edges of the model, the color and shape of the display
+points of the model. These settings are available in the right part of
+the window, as well as in the Settings menu items - there is also an
+opportunity to change the program language (2 languages are available:
+Russian and English).
+
+@node Images
+@section Images
+The program allows you to save screenshots as files with the extension
+bmp or jpeg (optional). To do this, follow Save->Image->Bmp (or Jpeg),
+then specify the name of the file to save or select an existing one to
+overwrite its contents.
+
+@node Gif
+@section Gif
+The program allows you to create a 640x480 gif animation lasting 5 seconds.
+To do this, you need to enter any values of offset, rotation, scaling in
+the appropriate input fields, and then select Save->Gif in the menu, give
+a name to the file or select an existing one to overwrite its contents. The
+resulting file with the gif extension can be open in the program window.
+To do this, follow File->Open->GIF and select it from the directory in which
+it was saved.
+
+@bye
+
+@pindex sample
+@cindex invoking @command{sample}
+
+This is a sample manual.  There is no sample program to
+invoke, but if there were, you could see its basic usage
+and command line options here.
+
+
+@node Com
+@appendix Com
+
+include
+
+
+@node Index
+@unnumbered Index
+
+@printindex cp
+dfnrfhmthg
+
+@bye
